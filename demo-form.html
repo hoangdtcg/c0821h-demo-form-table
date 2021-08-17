@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký</title>
+</head>
+<style>
+    input, textarea {
+        display: block;
+    }
+
+    #signup-form {
+        width: 400px;
+        margin: auto;
+    }
+
+    .area {
+        margin-bottom: 10px;
+    }
+
+    #male, #female, #hobby input, #accept-licence {
+        display: inline-block;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #btn-group{
+        text-align: center;
+    }
+</style>
+<body>
+<div id="signup-form">
+    <form>
+        <fieldset>
+            <!--            <legend>Register</legend>-->
+            <h1>Signup</h1>
+            <fieldset>
+                <legend>Register</legend>
+                <div class="area">
+                    <label for="username">User name</label>
+                    <input type="text" id="username" placeholder="Nguyen Van A">
+                </div>
+                <div class="area">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="area">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Min 6 character and max 14">
+                </div>
+                <div class="area">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Min 6 character and max 14">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Information</legend>
+                <div class="area">
+                    <label for="address">Address</label>
+                    <textarea id="address" cols="30" rows="10"></textarea>
+                </div>
+                <div class="area">
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone">
+                </div>
+                <div class="area">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" checked>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender">
+                </div>
+                <div class="area">
+                    <table id="hobby">
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="hobby1">
+                                <label for="hobby1">Music</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="hobby2">
+                                <label for="hobby2">Game</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="hobby3">
+                                <label for="hobby3">Football</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="hobby4">
+                                <label for="hobby4">Cook</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="hobby5">
+                                <label for="hobby5">Travel</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="hobby6">
+                                <label for="hobby6">Sleep</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+
+            <div class="area">
+                <input type="checkbox" id="accept-licence">
+                <label for="accept-licence">I wish to receive information, offers, recommendations, and updates from
+                    CG!</label>
+            </div>
+
+            <div class="area" id="btn-group">
+                <button>Signup</button>
+                <button>Cancel</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>
